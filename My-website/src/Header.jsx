@@ -1,10 +1,15 @@
+import { useState } from "react";
+
 function Header({ activeSection }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <header className="headerr">
       <h1 className="logo">
         DC <span className="log">WEB</span>
       </h1>
-      <nav className="navv">
+      <nav className={`navv ${isMenuOpen ? "show-menu" : ""}`}>
         <ul className="navlinks">
           <li>
             <a
@@ -41,6 +46,11 @@ function Header({ activeSection }) {
         </ul>
       </nav>
       <button className="butt">Work</button>
+      <div className="harmburger" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
     </header>
   );
 }

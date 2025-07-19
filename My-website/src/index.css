@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background: transparent;
 }
@@ -7,14 +12,15 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-
+  padding: 0.5em;
+  background-color: white;
   padding-left: 20px;
   padding-right: 20px;
   align-items: center;
 }
 .logo {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 1.5em;
 }
 .log {
   color: rgb(194, 81, 11);
@@ -56,7 +62,8 @@ body {
 
 .butt {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  width: 80px;
+  width: 100%;
+  max-width: 80px;
   border-radius: 30px;
   background: transparent;
   color: rgb(0, 0, 0);
@@ -67,11 +74,10 @@ body {
 .hero-section {
   position: relative;
   height: 100vh;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem;
+
   margin: 0;
 }
 .multi-shape-bg {
@@ -88,22 +94,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 24px;
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
 }
 
 .dp {
-  width: 25em;
+  width: 100%;
+  max-width: 25em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 3px;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .doyou {
   font-size: 2.5em;
 }
 .text1 {
   color: rgb(177, 84, 26);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
 }
 .text1,
 .text2 {
@@ -115,11 +123,20 @@ body {
 .text3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(194, 81, 11);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.438);
+}
+.bio11 {
+  margin-bottom: 1em;
 }
 .bio1 {
   font-size: 1.2em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  margin: 1em;
+  margin-left: 0;
+}
+.textContainer {
+  margin-top: 3em;
 }
 .but-div {
   display: flex;
@@ -130,7 +147,7 @@ body {
 .but2 {
   background: transparent;
   border-radius: 20px;
-  width: 25%;
+  width: 8em;
   padding: 10px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -139,6 +156,7 @@ body {
   color: rgb(194, 81, 11);
   border: 3px solid rgb(194, 81, 11);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .but2 {
   color: white;
@@ -149,43 +167,689 @@ body {
   color: white;
   background-color: rgb(194, 81, 11);
   border: 3px solid rgb(194, 81, 11);
+  transform: scale(1.1);
 }
 .but2:hover {
   background: transparent;
   color: rgb(194, 81, 11);
+  transform: scale(1.1);
+}
+.toolLogos {
+  width: 2.5em;
+  padding: 0.5em;
+  padding-top: 1.5em;
+}
+.outlinediv {
+  border: 3px solid rgb(177, 84, 26);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
 }
 
 #aboutPic {
-  width: 18em;
-  border-radius: 200px;
+  max-width: 20em;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 3em;
 }
 .aboutDiv {
-  padding: 7em;
-
   background-color: #e6d6cc4e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  flex-wrap: wrap;
 }
 .paradiv {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: hsl(210, 1%, 36%);
   font-size: 1.1em;
-  padding: 1em;
   background-color: hsla(0, 0%, 100%, 0);
+}
+.aboutcontactlogo {
+  margin-top: 2em;
+  display: flex;
+  gap: 1em;
+  justify-content: right;
+  width: 100%;
+}
+.aboutIcon1,
+.aboutIcon2,
+.aboutIcon3,
+.aboutIcon4,
+.aboutIcon5 {
+  width: 1.5em;
+  height: 1.5em;
+}
+.aboutIcon1 {
+  color: rgb(7, 99, 220);
+  background-color: white;
+  border-radius: 50%;
+}
+.aboutIcon2 {
+  color: rgb(222, 16, 85);
+}
+.aboutIcon3 {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+}
+.aboutIcon4 {
+  color: rgb(81, 129, 233);
+}
+.aboutIcon5 {
+  color: rgb(24, 134, 48);
+}
+.aboutIcon6 {
+  color: black;
 }
 .abtDiv {
   text-align: center;
   color: rgb(194, 81, 11);
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .abtdiv1 {
-  background-color: hsla(0, 0%, 100%, 0);
   display: flex;
   align-items: center;
-  gap: 25px;
-  padding: 2em;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
   border-radius: 10px;
+  margin: 0;
+  justify-content: center;
+  width: 100%;
+  max-width: 75vw;
+  gap: 2em;
+}
+.projectDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+  gap: 1em;
+  background: url(./assets/herobackgroung.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+}
+address {
+  font-style: normal;
+}
+
+.projectfig {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .projectDiv {
+    flex-direction: column;
+    padding: 1em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+  }
+  .projectfig {
+    width: 100%;
+  }
+}
+.projectfig figcaption {
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 90%;
+  border-radius: 10px;
+  padding: 1em;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.projectImg1 img {
+  width: 100%;
+  max-height: 15em;
+  border-radius: 5px;
+}
+.projectImg1 {
+  width: 100%;
+  padding: 0em;
+  background-color: rgba(0, 0, 0, 0.603);
+  border-radius: 10px;
+}
+.ProjectTextDiv {
+  text-align: center;
+  margin: 5em;
+  margin-bottom: 1em;
+  padding-top: 3.5em;
+}
+.ProjectTextDiv h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(39, 39, 39);
+  font-size: 2.8em;
+}
+.ProjectTextDiv p {
+  font-size: 1.6em;
+}
+
+.imgDiv1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+  flex-wrap: wrap;
+}
+.hi1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+#offers {
+}
+.offerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin: 4em;
+  margin-bottom: 5em;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+.offertitle {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(20, 20, 20);
+  font-size: 2em;
+  padding-bottom: 0;
+  padding-top: 3.5em;
+}
+.offertitle p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.6em;
+}
+
+.offerDiv1,
+.idesign {
+  width: 100%;
+  max-width: 26em;
+  height: 32.5em;
+  border-radius: 2em;
+}
+.idesign {
+  border: white solid 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.offerDiv2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.deediv1,
+.deediv2,
+.deediv3,
+.deediv4 {
+  width: 100%;
+  max-width: 11.5em;
+  height: 12.8em;
+  margin: 0.5em;
+  padding: 0.6em;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  border: white solid 2px;
+}
+.deediv1 {
+  background-color: rgba(255, 228, 196, 0.785);
+  color: rgb(151, 78, 22);
+}
+.deediv2 {
+  background-color: rgba(142, 249, 249, 0.573);
+  color: rgb(0, 44, 64);
+}
+.deediv3 {
+  background-color: rgba(0, 0, 0, 0.297);
+  color: white;
+}
+.deediv4 {
+  color: rgb(1, 48, 5);
+  background-color: rgba(230, 249, 230, 0.747);
+}
+
+.horizontalRule {
+  border-right: 1.5px solid rgb(238, 238, 238);
+  margin: 1em;
+  max-height: 18em;
+}
+.contactDivParent {
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.603);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+.contacttitle {
+  padding: 1.5em;
+  margin-bottom: 1em;
+}
+.contactDivParent h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.301);
+}
+.contactDivParent p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.368);
+}
+.contactDivParent2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contactdivContact {
+  padding: 1em;
+}
+.contactPara {
+  display: flex;
+  align-items: center;
+  background-color: rgba(7, 3, 0, 0.128);
+  padding: 0.7em;
+  gap: 15px;
+  margin: 1em;
+  border-radius: 0.5em;
+  font-size: large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+.contactPara a {
+  text-decoration: none;
+  color: rgb(239, 237, 237);
+}
+.contactPara .contactIcon1,
+.contactIcon2,
+.contactIcon3 {
+  padding: 0.6em;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.contactPara .contactIcon1 {
+  background-color: rgba(48, 167, 48, 0.47);
+}
+.contactPara .contactIcon2 {
+  background-color: rgba(201, 57, 57, 0.559);
+}
+.inputField {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 20em;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contactForm label {
+  color: rgb(246, 246, 246);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  font-size: 1.1em;
+}
+.contactForm input {
+  padding: 8px;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-bottom: 0.5em;
+  border-bottom: 1.5px rgb(254, 254, 254) solid;
+  width: 100%;
+  height: 1.6em;
+  color: white;
+  font-size: 1.1em;
+  padding-left: 7px;
+  transition: border-bottom 0.2s ease-in-out;
+  border-left: 1.5px rgb(254, 254, 254) solid;
+}
+.notefield {
+  position: relative;
+}
+.notefield textarea {
+  padding: 0.5em;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1.5px rgb(254, 254, 254) solid;
+  border-right: 1.5px rgb(254, 254, 254) solid;
+  width: 100%;
+  height: 3.5em;
+  color: white;
+  font-size: 1.3em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: border-bottom 0.2s ease-in-out;
+}
+.notefield label {
+  color: rgb(254, 254, 254);
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 5px;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  font-size: 1.1em;
+  margin: 0.5em;
+}
+.notefield textarea:focus ~ label {
+  top: 0;
+  font-size: 12px;
+  color: white;
+}
+.notefield textarea:focus ~ label,
+.notefield textarea:not(:placeholder-shown) ~ label {
+  top: 0;
+  font-size: 12px;
+  transform: translateY(-100%);
+  color: white;
+}
+
+.contactForm input:focus ~ label {
+  top: 0;
+  font-size: 12px;
+  color: white;
+}
+.contactForm input:focus ~ label,
+.contactForm input:not(:placeholder-shown) ~ label {
+  top: 0;
+  font-size: 12px;
+  transform: translateY(-100%);
+  color: white;
+}
+.Btndiv {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+}
+#submitBtn {
+  position: absolute;
+  left: 70%;
+  padding: 4px;
+  width: 100%;
+  max-width: 5em;
+  margin-top: 1em;
+  border-radius: 3px;
+  border: none;
+}
+.mr-2-text-yellow-600,
+.mr-2-text-purple-600 {
+  padding-right: 3px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.938);
+}
+.footerDiv {
+  display: flex;
+  padding: 5em;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .footerDiv {
+    padding: 2em;
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+.footerTextDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 40%;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .footerTextDiv {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+.footerTextDiv h3 {
+  font-size: 2.3em;
+}
+.footerTextDiv button {
+  min-width: 100%;
+  padding: 0.7em;
+  border-radius: 15px;
+  background-color: rgb(194, 81, 11);
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footerTextDiv button:hover {
+  background-color: transparent;
+  color: rgb(224, 223, 223);
+}
+.footerNavDiv .footeNavlist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+@media (max-width: 768px) {
+  .footerNavDiv .footeNavlist {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+  }
+}
+.footerNavDiv .footeNavlist a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.footerNavDiv .footeNavlist a:hover {
+  color: rgb(241, 178, 115);
+  transform: scale(1.1);
+}
+.footerContactDiv {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+}
+@media (max-width: 768px) {
+  .footerContactDiv {
+    align-items: baseline;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+  }
+}
+.footerContactDiv .footerIcon4,
+.footerIcon1,
+.footerIcon2,
+.footerIcon3,
+.footerIcon5,
+.footerIcon7 {
+  width: 100%;
+  max-width: 2.1em;
+  max-height: 2.1em;
+  color: white;
+}
+
+.footerContactDiv .footerIcon2 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  color: rgb(7, 99, 220);
+}
+.footerContactDiv .footerIcon3 {
+  color: rgb(69, 116, 227);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.footerContactDiv .footerIcon5 {
+  color: rgba(18, 176, 18, 0.966);
+}
+.footerContactDiv .footerIcon7 {
+  color: rgb(186, 46, 88);
+}
+.copyrightdiv {
+  background-color: rgba(0, 0, 0, 0.922);
+  display: flex;
+  justify-content: center;
+  color: rgb(195, 193, 193);
+  padding: 2em;
+}
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .headerr {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1em;
+    background: transparent;
+  }
+  .navv {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.785);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.189);
+    width: 80%;
+    max-width: 80px;
+    padding: 1em;
+    border-radius: 10px;
+    display: none;
+    z-index: 1001;
+  }
+  .navv.show-menu {
+    display: block;
+  }
+  .navlinks {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+  .butt {
+    display: none;
+  }
+  .harmburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin: 2%;
+  }
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+  }
+  .herodiv {
+    width: 100vw;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 0%;
+  }
+  .dp {
+    max-width: 70%;
+  }
+  .textContainer {
+    width: 100vw;
+  }
+  .text1,
+  .text2 {
+    display: block;
+    font-size: 130%;
+  }
+  .but-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .abtdiv1 {
+    flex-wrap: wrap-reverse;
+    text-align: center;
+  }
+  .aboutcontactlogo {
+    margin-top: 0;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    width: 100%;
+    padding: 1em;
+  }
+  .offerDiv {
+    padding: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 0;
+    margin-top: 2em;
+    background: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.695)),
+      url(./assets/chen-Qtu3hGinLF8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .offerDiv1 {
+    display: none;
+  }
+  .offerDiv2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 1.2em;
+  }
+  .deediv1,
+  .deediv2,
+  .deediv3,
+  .deediv4 {
+    width: 100%;
+    max-width: 65vw;
+    height: 33vh;
+    gap: 1.4em;
+  }
+  .contactForm input {
+    border-left: none;
+    outline: none;
+  }
+  .horizontalRule {
+    border-top: 1.5px solid rgb(238, 238, 238);
+    width: 100%;
+  }
 }

@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import Hero from "./hero";
 import About from "./About";
+import Work from "./Work";
+import Footer from "./footer";
+import Offer from "./Offer";
+import Contact from "./assets/Contact";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -28,6 +32,10 @@ function App() {
       <Header activeSection={activeSection} />
       <Hero />
       <About />
+      <Work />
+      <Offer />
+      <Contact />
+      <Footer />
     </>
   );
 }
