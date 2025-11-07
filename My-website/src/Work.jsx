@@ -30,7 +30,7 @@ function Work() {
           </figure>
           <figure className="projectfig">
             <div className="projectImg1">
-              <img src={image1} alt="my blog" />
+              <img src={image3} alt="my blog" />
             </div>
             <figcaption>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi

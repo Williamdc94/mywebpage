@@ -8,19 +8,26 @@ body {
 }
 .headerr {
   display: flex;
-  justify-content: space-between;
+
   position: sticky;
   top: 0;
   z-index: 1000;
   padding: 0.5em;
-  background-color: white;
+
   padding-left: 20px;
   padding-right: 20px;
   align-items: center;
+  justify-content: space-between;
+}
+.harmburger {
+  display: none;
 }
 .logo {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.1em;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 30px;
 }
 .log {
   color: rgb(194, 81, 11);
@@ -29,10 +36,13 @@ body {
   margin: 0px;
 }
 .navlinks {
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   list-style: none;
   display: flex;
   gap: 15px;
+  padding: 0.5em;
+  border-radius: 30px;
 }
 .navlinks a {
   text-decoration: none;
@@ -65,7 +75,7 @@ body {
   width: 100%;
   max-width: 80px;
   border-radius: 30px;
-  background: transparent;
+  background-color: white;
   color: rgb(0, 0, 0);
   padding: 8px;
   margin-left: 10px;
@@ -191,6 +201,7 @@ body {
 }
 
 #aboutPic {
+  width: 100%;
   max-width: 20em;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -347,8 +358,6 @@ address {
 .hi1 {
   margin-bottom: 1em;
   margin-top: 1em;
-}
-#offers {
 }
 .offerDiv {
   display: flex;
@@ -737,10 +746,12 @@ footer {
     padding: 0;
   }
   .headerr {
+    font-size: 0.8em;
     flex-direction: row;
     align-items: flex-start;
     gap: 1em;
-    background: transparent;
+    background: white;
+    margin-top: 0;
   }
   .navv {
     position: absolute;
@@ -768,12 +779,12 @@ footer {
   .harmburger {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 3px;
     cursor: pointer;
     margin: 2%;
   }
   .bar {
-    width: 25px;
+    width: 20px;
     height: 3px;
     background-color: black;
     border-radius: 2px;
@@ -783,9 +794,15 @@ footer {
     flex-direction: column-reverse;
     text-align: center;
     margin: 0%;
+    padding: 2em;
+    padding-top: 4em;
   }
   .dp {
-    max-width: 70%;
+    width: 100%;
+    max-width: 20em;
+    height: 100%;
+    max-height: 20em;
+    box-shadow: none;
   }
   .textContainer {
     width: 100vw;
@@ -793,7 +810,7 @@ footer {
   .text1,
   .text2 {
     display: block;
-    font-size: 130%;
+    font-size: 110%;
   }
   .but-div {
     display: flex;
@@ -805,6 +822,10 @@ footer {
     flex-wrap: wrap-reverse;
     text-align: center;
   }
+  #aboutPic {
+    width: 100;
+  }
+
   .aboutcontactlogo {
     margin-top: 0;
     display: flex;
@@ -824,7 +845,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
   }
   .offerDiv1 {
     display: none;
@@ -839,14 +859,22 @@ footer {
   .deediv2,
   .deediv3,
   .deediv4 {
+    box-sizing: border-box;
+    padding-top: 2em;
+    padding-bottom: 2em;
     width: 100%;
     max-width: 65vw;
-    height: 33vh;
+    height: 100%;
+    max-height: 30vh;
     gap: 1.4em;
+    font-size: 1rem;
   }
   .contactForm input {
     border-left: none;
     outline: none;
+  }
+  .contactForm textarea {
+    border-right: none;
   }
   .horizontalRule {
     border-top: 1.5px solid rgb(238, 238, 238);
